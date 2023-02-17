@@ -1,5 +1,4 @@
 // Temperature Convertion (3*2 = 6 types)
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -52,7 +51,6 @@ int main()
     f = ((((k-273)*9)/5)+32) ;
     cout << "Fahrenheit = " << f;
     */
-
 
     return 0;
 }
