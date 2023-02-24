@@ -1,6 +1,5 @@
-// some function implementation 
 /*
-// to calculate factorial
+// to calculate factorial using function
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -55,8 +54,8 @@ int power_func(int n, int p) {
     return powr;
 }
 */
-/*
-// 1-2+6-24+120...............n! = ?
+/* 
+// 1-2+6-24+120...............n! = ? using function
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -88,8 +87,8 @@ int mySeries(int n) {
     return sum;
 }
 */
-
-// 1-1/2*2+1/3*3-1/4*4...............1/n*n = ?
+/*
+// 1-1/2*2+1/3*3-1/4*4...............1/n*n = ? using function
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -120,4 +119,41 @@ double mySeries(int n) {
     }
 
     return sum;
+}
+*/
+
+// print this binary pattern using function
+/*  AA
+    BB AA
+    AA BB AA
+    BB AA BB AA
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void myPattern(int num);
+
+int main()
+{
+    int n1;
+
+    cout << "Enter value of n = ";
+    cin >> n1;
+
+    myPattern(n1);
+
+    return 0;
+}
+
+void myPattern(int n){
+    int i, j;
+
+    for (i = 1; i <= n; i++ ) {
+        for (j = i; j >= 1; j--) {
+            if (j%2==0) cout << "BB ";
+            else cout << "AA ";
+        }        
+        cout << endl;
+    }
 }
